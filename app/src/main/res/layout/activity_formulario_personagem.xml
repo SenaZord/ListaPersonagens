@@ -21,7 +21,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="Altura"
-        android:inputType="textPersonName" />
+        android:inputType="numberDecimal" />
 
     <EditText
         android:id="@+id/editText_nascimento"
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="01/01/1901"
-        android:inputType="textPersonName" />
+        android:inputType="date" />
 
     <Button
         android:id="@+id/button_Salvar"
