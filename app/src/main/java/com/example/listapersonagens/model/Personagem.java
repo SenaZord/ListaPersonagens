@@ -11,6 +11,7 @@ public class Personagem implements Serializable {
     private final String altura;
     private final String nascimento;*/
 
+    //pegando variaveis //
     private String nome;
     private String altura;
     private String nascimento;
@@ -18,10 +19,14 @@ public class Personagem implements Serializable {
 
 
     public Personagem(String nome, String altura, String nascimento) {
-
+        //setando variaveis
         this.nome = nome;
         this.altura = altura;
         this.nascimento = nascimento;
+    }
+
+    public Personagem(){
+
     }
 
     public String getNome() {
@@ -55,10 +60,7 @@ public class Personagem implements Serializable {
             return nome;
         }
 
-        public  void setId(int id){
-        this.id = id;
-
-        }
+        public  void setId(int id) { this.id = id; }
 
         public int getId(){
             return id;
