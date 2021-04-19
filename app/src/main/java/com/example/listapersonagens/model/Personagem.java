@@ -71,26 +71,6 @@ public class Personagem implements Serializable {
     public boolean IdInvalido() {
         return id > 0;
     }
-
-        /* }
-
-    public String getNome() {
-
-
-        return nome;
-    }
-
-    public String getAltura() {
-
-
-        return altura;
-    }
-
-    public String getNascimento() {
-
-
-        return nascimento;
-    }*/
 }
 
 

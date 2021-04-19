@@ -54,7 +54,6 @@ public class FormularioPersonagemActivity extends AppCompatActivity {
 
         }
     }
-
     private void preencheCampos() {
         campoNome.setText(personagem.getNome());
         campoAltura.setText(personagem.getAltura());
@@ -71,8 +70,11 @@ public class FormularioPersonagemActivity extends AppCompatActivity {
                 }
             });
             }
+
+
     private void finalizarFormulario(){
         preencherPersonagem();
+        //Checagem de id valido para salvar//
         if(personagem.IdInvalido()){
             dao.editar(personagem);
             finish();
@@ -90,6 +92,7 @@ public class FormularioPersonagemActivity extends AppCompatActivity {
         campoNascimento = findViewById(R.id.editText_nascimento);
     }
 
+        //Pegando informações para preenchimento do personagem//
     private void preencherPersonagem(){
         String nome = campoNome.getText().toString();
         String nascimento = campoNascimento.getText().toString();
