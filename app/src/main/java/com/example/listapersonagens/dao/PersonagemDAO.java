@@ -1,4 +1,4 @@
-package com.example.listapersonagens.dao;
+    package com.example.listapersonagens.dao;
 
 import com.example.listapersonagens.model.Personagem;
 
@@ -42,6 +42,14 @@ public class PersonagemDAO {
 
     public List<Personagem> todos() {
         return new ArrayList<>(personagens);
+    }
+
+
+    public void remove(Personagem personagem){
+        Personagem personagemDevolvido = buscaPersonagemId(personagem);
+        if(personagemDevolvido != null){
+            personagens.remove(personagemDevolvido);
+        }
     }
 
 
