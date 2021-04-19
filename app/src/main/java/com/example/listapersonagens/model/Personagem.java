@@ -17,7 +17,6 @@ public class Personagem implements Serializable {
     private String nascimento;
     private int id = 0;
 
-
     public Personagem(String nome, String altura, String nascimento) {
         //setando variaveis
         this.nome = nome;
@@ -25,9 +24,10 @@ public class Personagem implements Serializable {
         this.nascimento = nascimento;
     }
 
-    public Personagem(){
+    public Personagem() {
 
     }
+    //Retornando dados salvo em lista//
 
     public String getNome() {
         return nome;
@@ -53,18 +53,24 @@ public class Personagem implements Serializable {
         this.nascimento = nascimento;
     }
 
-    //Retornando Nome salvo em lista//
+    //Retornando alteração ao adicionar itens//
     @NonNull
-        @Override
-        public String toString(){
-            return nome;
-        }
+    @Override
+    public String toString() {
+        return nome;
+    }
 
-        public  void setId(int id) { this.id = id; }
+    public void setId(int id) {
+        this.id = id;
+    }
 
-        public int getId(){
-            return id;
-        }
+    public int getId() {
+        return id;
+    }
+
+    public boolean IdInvalido() {
+        return id > 0;
+    }
 
         /* }
 
